@@ -1,4 +1,5 @@
 ﻿using Business;
+using Data;
 using Data.Model;
 using NaskoEgotin.UI;
 using System;
@@ -23,9 +24,18 @@ namespace NaskoEgotin
             InitializeComponent();
         }
 
+        void LoadData()
+        {
+            using (FilmContext db = new FilmContext())
+            {
+                var films = db.Films.ToList();
+                dataGridView1.DataSource = films;
+            }
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            LoadData();
         }
      
         private void button1_Click(object sender, EventArgs e)
