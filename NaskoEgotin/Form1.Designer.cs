@@ -32,7 +32,6 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -68,32 +67,22 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(177, 552);
+            this.btnDelete.Location = new System.Drawing.Point(15, 537);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(6);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(150, 44);
             this.btnDelete.TabIndex = 22;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Location = new System.Drawing.Point(15, 552);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(6);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(150, 44);
-            this.btnUpdate.TabIndex = 20;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(850, 624);
+            this.ClientSize = new System.Drawing.Size(850, 592);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
@@ -110,7 +99,6 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnUpdate;
     }
 }
 
